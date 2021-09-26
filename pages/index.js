@@ -1,6 +1,8 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import Head from 'next/head';
+import styles from '../styles/Home.module.css';
+import NavBar from '../components/NavBar.js';
+import Search from '../components/Search.js';
+import GameLibrary from '../components/GameLibrary.js';
 
 export default function Home() {
   return (
@@ -10,6 +12,11 @@ export default function Home() {
         <meta name="description" content="Game Saves" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <div>
+        <NavBar />
+        <Search />
+        <GameLibrary />
+      </div>
     </div>
   )
 }
