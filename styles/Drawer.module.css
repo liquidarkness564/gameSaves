@@ -1,0 +1,14 @@
+.drawerButton {
+  position: absolute;
+  top: 7.6rem;
+  left: 35%;
+}
+
+.drawerContainer {
+  margin: 0 0 1% 1%;
+}
+
+.autoSearchButton {
+  height: 2.5rem;
+  top: 0.5rem;
+}

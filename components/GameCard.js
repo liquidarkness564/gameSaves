@@ -5,26 +5,27 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
+import styles from '../styles/GameCard.module.css';
 
 export default function MediaCard() {
   return (
-    <Card sx={{ maxWidth: '15rem' }}>
-      <CardMedia
-        component="img"
-        height="100%"
-        width='100%'
-        image="https://cdn.pixabay.com/photo/2016/11/15/23/51/controller-1827840_960_720.png"
-        alt="green iguana"
-      />
-      <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
-          Subnautica
-        </Typography>
-        <Typography variant="body2" color="text.secondary">
-          Lizards are a widespread group of squamate reptiles, with over 6,000
-          species, ranging across all continents except Antarctica
-        </Typography>
-      </CardContent>
-    </Card>
-  );
+      <Card className={styles.cardContainer}>
+        <CardMedia
+          component="img"
+          height="43%"
+          width='100%'
+          image="https://cdn.pixabay.com/photo/2021/05/06/14/51/gamepad-6233583_960_720.png"
+          alt="green iguana"
+        />
+        <CardContent className={styles.contentContainer}>
+          <Typography gutterBottom variant="h5" component="div">
+            Subnautica
+          </Typography>
+          <Typography variant="body2" color="#C6791E">
+            Lizards are a widespread group of squamate reptiles, with over 6,000
+            species, ranging across all continents except Antarctica
+          </Typography>
+        </CardContent>
+      </Card>
+  )
 }

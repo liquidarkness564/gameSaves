@@ -1,0 +1,14 @@
+.cardContainer {
+  max-width: 13rem;
+  box-shadow: 0.35rem 0.35rem 0.45rem rgb(167, 167, 167);
+  background-color: #282749;
+  border-radius: 10%;
+  height: 22rem;
+  margin: 2%;
+}
+
+.contentContainer {
+  /* color: #C6791E; */
+  color: #f8a642;
+  font-weight: 900;
+}

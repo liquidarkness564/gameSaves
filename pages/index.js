@@ -3,6 +3,7 @@ import styles from '../styles/Home.module.css';
 import NavBar from '../components/NavBar.js';
 import Search from '../components/Search.js';
 import GameLibrary from '../components/GameLibrary.js';
+import AddDrawer from '../components/AddDrawer.js';
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
         <NavBar />
         <Search />
         <GameLibrary />
+        <AddDrawer />
       </div>
     </div>
   )

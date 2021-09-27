@@ -1,5 +1,7 @@
 .gameLibraryContainer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
   position: absolute;
   top: 13rem;
-  left: 5%;
 }

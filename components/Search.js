@@ -18,7 +18,7 @@ export default function Search() {
         >
           <TextField
             id="filled-search"
-            label="Search field"
+            label="Search Collection"
             type="search"
             variant="filled"
           />
