@@ -12,3 +12,29 @@
   height: 2.5rem;
   top: 0.5rem;
 }
+
+.resultsAreaContainer {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100% !important;
+}
+
+.miniCardContainer {
+  width: 13rem;
+  height: 21rem;
+  margin: 0 1.5%;
+  border: solid 2px black;
+  box-shadow: 0.3rem 0.3rem 0.2rem rgb(209, 209, 209);
+  text-align: center;
+  color: #f8a642;
+  background-color: #282749;
+}
+
+.miniCardContainer img {
+  height: 70%;
+  width: 100%;
+}
+
+.css-xn6ruc>:not(style) {
+  width: 100%;
+}
