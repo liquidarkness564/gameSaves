@@ -38,3 +38,18 @@
 .css-xn6ruc>:not(style) {
   width: 100%;
 }
+
+.selectButtonContainer {
+  padding-top: 1.2%;
+  display: flex;
+  justify-content: center;
+  width: 100% !important;
+}
+
+.selectButton {
+  height: 3rem;
+  font-size: 1.3rem;
+  background-color: #282749;
+  color: #f8a642;
+  width: 15rem;
+}
