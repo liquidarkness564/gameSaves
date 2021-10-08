@@ -6,7 +6,7 @@ import AutoSearch from './AutoSearch.js';
 import ManualSearch from './ManualSearch.js';
 import AddToggle from './AddToggle.js';
 
-export default function AddDrawer() {
+export default function AddDrawer({handleGameSelect}) {
   const [state, setState] = React.useState({top: false,});
 
   const [alignment, setAlignment] = React.useState(true);
@@ -36,7 +36,7 @@ export default function AddDrawer() {
           <div className={styles.drawerContainer}>
             <h2>Add a Game</h2>
             <AddToggle alignment={alignment} handleChange={handleChange}/>
-            {alignment ? <AutoSearch /> : <ManualSearch />}
+            {alignment ? <AutoSearch handleGameSelect={handleGameSelect}/> : <ManualSearch />}
           </div>
         </Drawer>
       </React.Fragment>

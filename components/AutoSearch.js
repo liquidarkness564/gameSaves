@@ -7,7 +7,7 @@ import axios from 'axios';
 import API_KEY from '../config/config.js';
 import ResultsArea from './ResultsArea.js';
 
-export default function AutoSearch() {
+export default function AutoSearch({handleGameSelect}) {
   const [curSearch, setCurSearch] = useState([]);
   const [searchInput, setSearchInput] = useState('');
   const [toggleSelect, setToggleSelect] = useState(false);
@@ -52,7 +52,7 @@ export default function AutoSearch() {
       <Button onClick={handleAutoSearch} className={styles.autoSearchButton}>Search</Button>
       <ResultsArea handleSelect={handleSelect} curSearch={curSearch}/>
       <div style={{display: toggleSelect ? 'flex' : 'none'}} className={styles.selectButtonContainer}>
-        <Button className={styles.selectButton}>Select Game</Button>
+        <Button onClick={() => handleGameSelect(curSearch)} className={styles.selectButton}>Select Game</Button>
       </div>
     </Box>
   );
