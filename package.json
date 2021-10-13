@@ -5,8 +5,9 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "start": "nodemon server/server.js",
+    "lint": "next lint",
+    "node": "node server/server.js"
   },
   "dependencies": {
     "@emotion/react": "^11.4.1",
@@ -14,6 +15,7 @@
     "@mui/icons-material": "^5.0.1",
     "@mui/material": "^5.0.1",
     "axios": "^0.22.0",
+    "express": "^4.17.1",
     "next": "11.1.2",
     "react": "17.0.2",
     "react-dom": "17.0.2"
@@ -21,6 +23,7 @@
   "devDependencies": {
     "eslint": "7.32.0",
     "eslint-config-next": "11.1.2",
-    "eslint-plugin-react": "^7.26.0"
+    "eslint-plugin-react": "^7.26.0",
+    "nodemon": "^2.0.13"
   }
 }
